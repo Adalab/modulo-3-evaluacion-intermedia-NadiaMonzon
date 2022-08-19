@@ -1,6 +1,7 @@
 import '../styles/App.scss';
 import quotes from "../data/quotes.json";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import ls from '../services/localStorage';
 
 function App() {
 
