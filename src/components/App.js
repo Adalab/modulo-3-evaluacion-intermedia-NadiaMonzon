@@ -1,6 +1,26 @@
 import '../styles/App.scss';
+import quotes from "../data/quotes.json";
+import { useState } from 'react';
 
 function App() {
+
+  //variables de estado
+  const [quote, setQuote] =useState(quotes)
+
+  //renderizado
+
+  const quoteList = quote.map((oneQuote)=>{
+    return (
+    <div>
+      <p>{oneQuote.quote} <span>-{oneQuote.character}</span></p>
+    </div>)
+  })
+
+  //filtrado
+
+
+
+
   return (
     <div className="App">
       <main>
@@ -19,9 +39,7 @@ function App() {
           <option value="Rachel">Rachel</option>
         </select>
 
-        <div>
-          <p>Pivot!Pivot!Pivot!PivotPivot <span>-Ross</span></p>
-        </div>
+        {quoteList}
 
 
       </main>
