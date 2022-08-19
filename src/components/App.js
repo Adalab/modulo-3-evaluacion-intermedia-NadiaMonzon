@@ -53,10 +53,10 @@ function App() {
       <main>
         <h1>Frases de Friends</h1>
         <fieldset>
-          <label htmlFor="filter">Filtrar por frase</label>
-          <input type="text" value={search} onChange={handleSearch} name='filter' id='filter'/>
-          <label htmlFor="">Filtrar por personaje</label>
-          <select value={searchCharacter} onChange={handleSearchSelect}>
+          <label htmlFor="filterQuote">Filtrar por frase</label>
+          <input type="text" value={search} onChange={handleSearch} name='filterQuote' id='filterQuote'/>
+          <label htmlFor="filterCharacter">Filtrar por personaje</label>
+          <select value={searchCharacter} onChange={handleSearchSelect} name="filterCharacter">
             <option id="Todos" value="Todos">Todos</option>
             <option id="Ross" value="Ross">Ross</option>
             <option id="Monica" value="Monica">Monica</option>
